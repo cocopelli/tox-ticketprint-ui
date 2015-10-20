@@ -4,7 +4,11 @@
  */
 var angular = require('angular');
 
-var requires = [];
+process.env.appversion = require('../package.json').version;
+
+var requires = [
+  require('./components').name
+];
 
 angular.module('tox-ticketprint-ui-app', requires);
 
