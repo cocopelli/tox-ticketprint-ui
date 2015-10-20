@@ -25,7 +25,7 @@ coming soon ...
 
 ## Local Webserver
 
-Running local and open [here](http://localhost:4444/)
+Running local and open [http://localhost:4444/](http://localhost:4444/)
 
 ```sh
 $ npm run start
@@ -34,7 +34,6 @@ $ npm run start
 
 ## Tests
 
-coming soon ...
 Trigger unit test with [npm](https://www.npmjs.com/)
 
 ```sh
