@@ -14,10 +14,17 @@
   },
   "homepage": "https://github.com/dasrick/tox-ticketprint-ui#readme",
   "devDependencies": {
+    "angular": "^1.4.7",
     "david": "^6.4.0",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "json-loader": "^0.5.3",
+    "ng-annotate-loader": "0.0.10",
+    "webpack": "^1.12.2"
   },
   "scripts": {
+    "postinstall": "npm run build",
+    "prebuild": "mkdir -p web/js/",
+    "build": "webpack --config webpack.config.js",
     "start": "node serve.js",
     "test": "echo \"Error: no test specified\" && exit 0"
   }
