@@ -28,15 +28,11 @@ var config = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('development')
+        'NODE_ENV': JSON.stringify('development'),
+        'appversion': JSON.stringify(require('./package.json').version)
       }
     }),
-    new webpack.optimize.UglifyJsPlugin(
-    //  {
-    //    exclude: /node_modules/i
-    //    //compress: {warnings: false}
-    //  }
-    ),
+    new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin()
   ]
