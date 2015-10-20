@@ -1,0 +1,39 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# TicketPrint
+
+Ticketprint is a simple API allowing consumers to trigger print jobs of tickets.
+
+
+## Tickets [/api/ticket/{id}]
+
++ Parameters
+    + id (required, string, `ABC-123`) ... AlphaNumeric `id` of the Ticket to perform action with. Has example value.
+
+
+### Get a Ticket [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": "ABC-123",
+            "title": "Hello Title"
+        }
+
+
+## Print Jobs [/api/print]
+
+### Create a new Print Job [POST]
+
+Just send a JSON object with ... to trigger a print job
+
++ Request (application/json)
+
+        {
+            "id": "ABC-123",
+            "format": 2,
+            "target": "it",
+        }
+
++ Response 200 (application/json)
