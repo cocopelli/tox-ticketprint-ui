@@ -9,4 +9,8 @@ coverage
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
+web/css/*
+web/fonts/*
+web/i18n/*
 web/js/*
+web/views/*
