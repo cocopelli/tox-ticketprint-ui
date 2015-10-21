@@ -4,7 +4,8 @@
 [![Build Status](https://travis-ci.org/dasrick/tox-ticketprint-ui.svg?branch=master)](https://travis-ci.org/dasrick/tox-ticketprint-ui)
 [![dependency Status](https://david-dm.org/dasrick/tox-ticketprint-ui/status.svg)](https://david-dm.org/dasrick/tox-ticketprint-ui#info=dependencies)
 [![devDependency Status](https://david-dm.org/dasrick/tox-ticketprint-ui/dev-status.svg)](https://david-dm.org/dasrick/tox-ticketprint-ui#info=devDependencies)
-[![Heroku Badge](http://img.shields.io/badge/deployed%20to-Heroku-7056bf.svg)](https://tox-ticketprint.herokuapp.com/)
+[![Heroku Badge](https://img.shields.io/badge/deployed%20to-Heroku-7056bf.svg)](https://tox-ticketprint.herokuapp.com/)
+[![Apiary Badge](https://img.shields.io/badge/apiary-docs-green.svg)](http://docs.ticketprint.apiary.io/)
 [![License](https://img.shields.io/github/license/dasrick/tox-ticketprint-ui.svg)](https://github.com/dasrick/tox-ticketprint-ui/blob/master/LICENSE)
 
 AngularJS frontend app for ticket print of MovingImage24
