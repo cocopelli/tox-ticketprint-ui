@@ -1,0 +1,34 @@
+<form class="form" id="formPrint" name="formPrint" novalidate>
+    <h3 translate="core.form.print.header"></h3>
+
+    <p translate="core.form.print.msg"></p>
+
+    <div class="form-group"
+         ng-class="{'has-error':formPrint.ticketNumber.$invalid && !formPrint.ticketNumber.$pristine }">
+        <input type="text"
+               name="ticketNumber"
+               class="form-control"
+               placeholder="{{'core.form.ticket-number.placeholder'|translate}}"
+               ng-model="coreVm.formData.ticketNumber"
+               autofocus
+               required>
+    </div>
+    <div class="form-group"
+         ng-class="{'has-error':formPrint.password.$invalid && !formPrint.password.$pristine }">
+        <input type="password"
+               name="password"
+               class="form-control"
+               placeholder="{{'core.form.password.placeholder'|translate}}"
+               ng-model="coreVm.formData.password"
+               required>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button ng-click="coreVm.printTicket()"
+                    ng-disabled="formPrint.$invalid"
+                    translate="core.form.btn.print.label"
+                    class="btn btn-block btn-primary">
+            </button>
+        </div>
+    </div>
+</form>
