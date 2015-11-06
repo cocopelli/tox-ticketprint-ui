@@ -1,5 +1,7 @@
 {
   "core.application.label": "TicketPrint",
   "core.application.title": "TP",
-  "core.application.icon": "fa-print"
+  "core.application.icon": "fa-print",
+
+  "core.form.foo": "bar"
 }

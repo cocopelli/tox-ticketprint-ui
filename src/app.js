@@ -4,20 +4,27 @@
  */
 var angular = require('angular');
 
+require('angular-formly');
+require('angular-formly-templates-bootstrap');
 require('angular-loading-bar');
 require('angular-resource');
 require('angular-translate');
 require('angular-translate-loader-partial');
 require('angular-ui-router');
 require('mi-angular-alert-service');
+require('mi-angular-resource-builder');
 
 var requires = [
+  'formly',
+  'formlyBootstrap',
   'angular-loading-bar',
   'ngResource',
   'pascalprecht.translate',
   'ui.router',
   'mi.AlertService',
-  require('./components').name
+  'mi.ResourceBuilder',
+  require('./components').name,
+  require('./shared').name
 ];
 
 angular.module('tox-ticketprint-ui-app', requires)
